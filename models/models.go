@@ -5,34 +5,46 @@ import (
 	"time"
 )
 
-type (
-	Mult struct {
-		Name string
-		Len  string
-	}
-)
+type Mult struct {
+	Name string
+	Len  string
+}
 
-type (
-	Typer struct {
-		Status int
-		Key    string
-	}
-)
+type Typer struct {
+	Status int
+	Key    string
+}
 
-type (
-	Evento struct {
-		Serial      int
-		Evento      int
-		Ocorrencia  int
-		Tempototal  int
-		Tempoinicio time.Time
-		Tempofinal  time.Time
-		Gpsinicio   string
-		Gpsfinal    string
-		Telemetria  string
-		Name        string
-	}
-)
+type Evento struct {
+	Serial      int
+	Evento      int
+	Ocorrencia  int
+	Tempototal  int
+	Tempoinicio time.Time
+	Tempofinal  time.Time
+	Gpsinicio   string
+	Gpsfinal    string
+	Telemetria  string
+	Name        string
+}
+
+type Login struct {
+	Username string `json:"username"`
+	Password string `json:"password"`
+}
+
+type JwtToken struct {
+	ID        string `json:"_id"`
+	Image     string `json:"image"`
+	Nome      string `json:"nome"`
+	Email     string `json:"email"`
+	Matricula string `json:"matricula"`
+	Token     string `json:"token"`
+}
+
+type Exception struct {
+	Message string `json:"message"`
+}
 
 func ReadMapInputs() (inputs map[string]map[int]string) {
 
