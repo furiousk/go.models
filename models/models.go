@@ -5,14 +5,17 @@ import (
 )
 
 type (
+	//Mult ....
 	Mult struct {
 		Name string
 		Len  string
 	}
+	//Typer ....
 	Typer struct {
 		Status int
 		Key    string
 	}
+	//Evento ....
 	Evento struct {
 		Serial      int
 		Evento      int
@@ -25,10 +28,12 @@ type (
 		Telemetria  string
 		Name        string
 	}
+	//Login ....
 	Login struct {
 		Username string `json:"username"`
 		Password string `json:"password"`
 	}
+	//JwtToken ....
 	JwtToken struct {
 		ID        string `json:"_id"`
 		Image     string `json:"image"`
@@ -37,6 +42,7 @@ type (
 		Matricula string `json:"matricula"`
 		Token     string `json:"token"`
 	}
+	//Environment ....
 	Environment struct {
 		Appname      string `json:"appname"`
 		Appenv       string `json:"appenv"`
@@ -47,7 +53,10 @@ type (
 		Dbdatabase   string `json:"dbdatabase"`
 		Dbusername   string `json:"dbusername"`
 		Dbpassword   string `json:"dbpassword"`
+		Exturl       string `json:"exturl"`
+		Exttoken     string `json:"exttoken"`
 	}
+	//Exception ....
 	Exception struct {
 		Message string `json:"message"`
 	}
