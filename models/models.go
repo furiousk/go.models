@@ -56,6 +56,7 @@ type (
 		Exturl       string `json:"exturl"`
 		Exttoken     string `json:"exttoken"`
 		Extdias      string `json:"extdias"`
+		Exttimer     string `json:"exttimer"`
 	}
 	//Exception ....
 	Exception struct {
