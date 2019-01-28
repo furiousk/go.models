@@ -55,6 +55,7 @@ type (
 		Dbpassword   string `json:"dbpassword"`
 		Exturl       string `json:"exturl"`
 		Exttoken     string `json:"exttoken"`
+		Extdias      string `json:"extdias"`
 	}
 	//Exception ....
 	Exception struct {
